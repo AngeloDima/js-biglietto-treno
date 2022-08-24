@@ -31,29 +31,37 @@
 
 //  Variabile Minorenne
 
+ let Min = anni < 18;
+ const Mino = costo * 0.8
+ const Sconto1 = `Prezzo scontato per Minorenni  ${Mino}`;
 
-let Min = anni < 18;
-const Mino = costo * 0.8
-const Sconto1 = `Prezzo scontato per Minorenni  ${Mino}`;
+ let Mag = anni > 65;
+ const Maggi = costo * 0.6
+ const Sconto2 = `Prezzo scontato per Maggiorenni  ${Maggi}`;
 
-let Mag = anni > 65;
-const Maggi = costo * 0.6
-const Sconto2 = `Prezzo scontato per Maggiorenni  ${Maggi}`;
 
 
 
 
 
  if  ( isNaN(Km)) { 
-   // blocco di istruzioni 1
-   document.getElementById('Chilometri').innerHTML = 'non hai inserito un numero';
-} else 
+    // blocco di istruzioni 1
+    document.getElementById('Chilometri').innerHTML = 'non hai inserito un numero';
+ } else 
+ 
+      // blocco di istruzioni 2
+      document.getElementById('Chilometri').innerHTML= risposta;
+      document.getElementById('Costo').innerHTML= soldi;
+      document.getElementById('Sconto1').innerHTML= Sconto1;
+      document.getElementById('Sconto2').innerHTML= Sconto2;
+     
 
-     // blocco di istruzioni 2
-     document.getElementById('Chilometri').innerHTML= risposta;
-     document.getElementById('Costo').innerHTML= soldi;
-     document.getElementById('Costo-Scontato1').innerHTML= Sconto1;
-     document.getElementById('Costo-Scontato2').innerHTML= Sconto2;
+
+
+
+
+
+
 
 
      
